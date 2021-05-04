@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="109904" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:51:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="109904" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:51:02Z">
+      <class name="com.qhl.testcases.ForgotPasswordTest">
+        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="report_setup" is-config="true" duration-ms="220" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report_setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="setup" is-config="true" duration-ms="17953" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:49:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password01" duration-ms="1676" started-at="2021-05-04T06:49:30Z" finished-at="2021-05-04T06:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password01 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="397" started-at="2021-05-04T06:49:32Z" finished-at="2021-05-04T06:49:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgot_password01 status=SUCCESS method=ForgotPasswordTest.forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password02" duration-ms="4501" started-at="2021-05-04T06:49:32Z" finished-at="2021-05-04T06:49:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password02 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="100" started-at="2021-05-04T06:49:36Z" finished-at="2021-05-04T06:49:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgot_password02 status=SUCCESS method=ForgotPasswordTest.forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password03" duration-ms="57978" started-at="2021-05-04T06:49:37Z" finished-at="2021-05-04T06:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password03 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="47" started-at="2021-05-04T06:50:35Z" finished-at="2021-05-04T06:50:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgot_password03 status=SUCCESS method=ForgotPasswordTest.forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password04" duration-ms="27191" started-at="2021-05-04T06:50:35Z" finished-at="2021-05-04T06:51:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password04 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="36" started-at="2021-05-04T06:51:02Z" finished-at="2021-05-04T06:51:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgot_password04 status=SUCCESS method=ForgotPasswordTest.forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+      </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

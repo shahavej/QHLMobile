@@ -1,0 +1,10 @@
+<suite thread-count="1" verbose="1" name="QHL App Test suite"
+	annotations="JDK" parallel="tests">
+	<test name="All Test">
+		<classes>
+			<class name="com.qhl.testcases.AppLogin" />
+			<class name="com.qhl.testcases.ForgotPasswordTest" />
+		</classes>
+	</test>
+
+</suite>
