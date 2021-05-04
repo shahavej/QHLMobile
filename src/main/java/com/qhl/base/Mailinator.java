@@ -76,32 +76,6 @@ public class Mailinator {
 		return password;
 	}
 
-
-
-	/*
-		String pid = w_driver.getWindowHandle();
-		Set<String> sid = w_driver.getWindowHandles();
-
-		for (String str : sid) {
-			if(!pid.equalsIgnoreCase(sid.toString()))
-			{
-				w_driver.switchTo().window(str);
-				w_driver.manage().window().maximize();
-				System.out.println(w_driver.getTitle());
-				w_driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys("password");
-
-			}
-
-		}
-
-		String message = w_driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]")).getText();
-		String otp = message.replaceAll("\\D", "");
-		w_driver.close();
-		return otp;
-	 */
-
-
-
 	public static WebDriver set_prop(String email) throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver",".//Exe//91.exe");
