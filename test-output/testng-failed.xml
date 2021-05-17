@@ -3,14 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qhl.testcases.ForgotPasswordTest">
+      <class name="com.qhl.testcases.AddContainerTest">
         <methods>
+          <include name="addContainer4"/>
+          <include name="addContainer7"/>
+          <include name="addContainer5"/>
+          <include name="addContainer3"/>
           <include name="setup"/>
-          <include name="forgot_password04"/>
+          <include name="addContainer6"/>
           <include name="killapk"/>
+          <include name="addContainer2"/>
           <include name="report_setup"/>
         </methods>
-      </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
+      </class> <!-- com.qhl.testcases.AddContainerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
