@@ -12,10 +12,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.qhl.base.Apputil;
 import com.qhl.base.Test_Data;
-import com.qhl.base.Webutil;
 import com.qhl.pages.LoginScreen;
 
 public class AppLogin extends Apputil {
@@ -24,30 +22,21 @@ public class AppLogin extends Apputil {
 	@BeforeClass
 	public void setup() throws MalformedURLException, ParseException, InterruptedException
 	{
-		JSONObject jobj = Test_Data.Read_Data("config");
-		driver=launch_apk(jobj.get("apk_package").toString(), jobj.get("apk_activity").toString());
-		obj=new LoginScreen(driver);
-
+		bc();
 	}
 
 	@AfterMethod
 	public void killapk(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			String temp = Webutil.getScreenshot(driver);
-			logger.fail(result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
-		}
-
-		extent.flush();
-		//driver.close();
+		am(result);
 	}
 
 	@Test(priority=1)
 	public void login01()
 	{
 		logger = extent.createTest("After launch the apk Flash screen should appear");
-
+		
+		obj=new LoginScreen(driver);
 		assertEquals(obj.get_splash_screen().isDisplayed(), true);
 	}
 	

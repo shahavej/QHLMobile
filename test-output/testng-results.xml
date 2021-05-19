@@ -1,84 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="6" ignored="0" total="7" passed="1">
+<testng-results skipped="3" failed="3" ignored="1" total="12" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46095" started-at="2021-05-10T12:43:00Z" finished-at="2021-05-10T12:43:47Z">
+  <suite name="QHL App Test suite" duration-ms="90616" started-at="2021-05-19T10:19:11Z" finished-at="2021-05-19T10:20:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46095" started-at="2021-05-10T12:43:00Z" finished-at="2021-05-10T12:43:47Z">
-      <class name="com.qhl.testcases.AddContainerTest">
-        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="report_setup" is-config="true" duration-ms="284" started-at="2021-05-10T12:43:00Z" finished-at="2021-05-10T12:43:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report_setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="setup" is-config="true" duration-ms="23297" started-at="2021-05-10T12:43:00Z" finished-at="2021-05-10T12:43:24Z">
+    <test name="All Test" duration-ms="90616" started-at="2021-05-19T10:19:11Z" finished-at="2021-05-19T10:20:42Z">
+      <class name="com.qhl.testcases.ForgotPasswordTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="setup" is-config="true" duration-ms="27541" started-at="2021-05-19T10:19:41Z" finished-at="2021-05-19T10:20:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addContainer1()[pri:1, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer1" duration-ms="12350" started-at="2021-05-10T12:43:24Z" finished-at="2021-05-10T12:43:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addContainer1 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="639" started-at="2021-05-10T12:43:36Z" finished-at="2021-05-10T12:43:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addContainer1 status=SUCCESS method=AddContainerTest.addContainer1()[pri:1, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="FAIL" signature="addContainer2()[pri:2, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer2" duration-ms="1279" started-at="2021-05-10T12:43:37Z" finished-at="2021-05-10T12:43:38Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: java.lang.IllegalArgumentException: Namespace with prefix 'com.quickhandslogistics' has not been declared.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=xpath, value=com.quickhandslogistics:id/content}]]>
-            </message>
+        <test-method status="FAIL" signature="forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="forgot_password01" duration-ms="10" started-at="2021-05-19T10:20:08Z" finished-at="2021-05-19T10:20:08Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: java.lang.IllegalArgumentException: Namespace with prefix 'com.quickhandslogistics' has not been declared.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=xpath, value=com.quickhandslogistics:id/content}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.qhl.testcases.AddContainerTest.addContainer2(AddContainerTest.java:74)
+              <![CDATA[java.lang.NullPointerException
+at com.qhl.testcases.ForgotPasswordTest.forgot_password01(ForgotPasswordTest.java:44)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -92,56 +29,207 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContainer2 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="1534" started-at="2021-05-10T12:43:38Z" finished-at="2021-05-10T12:43:40Z">
+        </test-method> <!-- forgot_password01 -->
+        <test-method status="FAIL" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="killapk" is-config="true" duration-ms="2264" started-at="2021-05-19T10:20:08Z" finished-at="2021-05-19T10:20:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addContainer2 status=FAILURE method=AddContainerTest.addContainer2()[pri:2, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=forgot_password01 status=FAILURE method=ForgotPasswordTest.forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@56aac163] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qhl.base.Apputil.am(Apputil.java:183)
+at com.qhl.testcases.ForgotPasswordTest.killapk(ForgotPasswordTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="FAIL" signature="addContainer3()[pri:3, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer3" duration-ms="94" started-at="2021-05-10T12:43:40Z" finished-at="2021-05-10T12:43:40Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="forgot_password02" duration-ms="0" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qhl.base.Apputil.am(Apputil.java:183)
+at com.qhl.testcases.ForgotPasswordTest.killapk(ForgotPasswordTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password02 -->
+        <test-method status="SKIP" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="killapk" is-config="true" duration-ms="0" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="SKIP" signature="forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="forgot_password03" duration-ms="0" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qhl.base.Apputil.am(Apputil.java:183)
+at com.qhl.testcases.ForgotPasswordTest.killapk(ForgotPasswordTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password03 -->
+        <test-method status="SKIP" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="killapk" is-config="true" duration-ms="0" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="SKIP" signature="forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="forgot_password04" duration-ms="0" started-at="2021-05-19T10:20:17Z" finished-at="2021-05-19T10:20:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qhl.base.Apputil.am(Apputil.java:183)
+at com.qhl.testcases.ForgotPasswordTest.killapk(ForgotPasswordTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgot_password04 -->
+        <test-method status="SKIP" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@56aac163]" name="killapk" is-config="true" duration-ms="0" started-at="2021-05-19T10:20:17Z" finished-at="2021-05-19T10:20:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+      </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
+      <class name="com.qhl.testcases.AppLogin">
+        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="report_setup" is-config="true" duration-ms="425" started-at="2021-05-19T10:19:11Z" finished-at="2021-05-19T10:19:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report_setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="setup" is-config="true" duration-ms="25212" started-at="2021-05-19T10:19:11Z" finished-at="2021-05-19T10:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="login01()[pri:1, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login01" duration-ms="1914" started-at="2021-05-19T10:19:37Z" finished-at="2021-05-19T10:19:39Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/textViewToolbar}]]>
+Session ID: 6b8cc662-2a86-4565-9f63-386cafe77250]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/textViewToolbar}
+Session ID: 6b8cc662-2a86-4565-9f63-386cafe77250
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -155,23 +243,18 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-at com.qhl.testcases.AddContainerTest.addContainer3(AddContainerTest.java:83)
+at com.qhl.testcases.AppLogin.login01(AppLogin.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -185,36 +268,91 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContainer3 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="1345" started-at="2021-05-10T12:43:40Z" finished-at="2021-05-10T12:43:41Z">
+        </test-method> <!-- login01 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="2238" started-at="2021-05-19T10:19:39Z" finished-at="2021-05-19T10:19:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addContainer3 status=FAILURE method=AddContainerTest.addContainer3()[pri:3, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login01 status=FAILURE method=AppLogin.login01()[pri:1, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="FAIL" signature="addContainer4()[pri:4, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer4" duration-ms="42" started-at="2021-05-10T12:43:41Z" finished-at="2021-05-10T12:43:41Z">
+        <test-method status="PASS" signature="login02()[pri:2, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login02" duration-ms="187" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login02 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="100" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login02 status=SUCCESS method=AppLogin.login02()[pri:2, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="login03()[pri:3, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login03" duration-ms="83" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login03 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="96" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login03 status=SUCCESS method=AppLogin.login03()[pri:3, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="login04()[pri:4, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login04" duration-ms="5406" started-at="2021-05-19T10:20:11Z" finished-at="2021-05-19T10:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login04 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="165" started-at="2021-05-19T10:20:16Z" finished-at="2021-05-19T10:20:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login04 status=SUCCESS method=AppLogin.login04()[pri:4, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="login05()[pri:5, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login05" duration-ms="5292" started-at="2021-05-19T10:20:17Z" finished-at="2021-05-19T10:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login05 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="159" started-at="2021-05-19T10:20:22Z" finished-at="2021-05-19T10:20:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login05 status=SUCCESS method=AppLogin.login05()[pri:5, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="FAIL" signature="login06()[pri:6, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login06" duration-ms="3936" started-at="2021-05-19T10:20:22Z" finished-at="2021-05-19T10:20:26Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -223,8 +361,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25
 System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/textViewAddOutBound}]]>
+Session ID: 6b8cc662-2a86-4565-9f63-386cafe77250
+*** Element info: {Using=xpath, value=//android.widget.TextView[@bounds='[36,2915][1404,3056]']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
@@ -233,101 +371,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25
 System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/textViewAddOutBound}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.qhl.testcases.AddContainerTest.addContainer4(AddContainerTest.java:96)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addContainer4 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="1181" started-at="2021-05-10T12:43:41Z" finished-at="2021-05-10T12:43:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addContainer4 status=FAILURE method=AddContainerTest.addContainer4()[pri:4, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="FAIL" signature="addContainer5()[pri:5, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer5" duration-ms="113" started-at="2021-05-10T12:43:42Z" finished-at="2021-05-10T12:43:42Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=xpath, value=//android.widget.TextView[@index='5']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=xpath, value=//android.widget.TextView[@index='5']}
+Session ID: 6b8cc662-2a86-4565-9f63-386cafe77250
+*** Element info: {Using=xpath, value=//android.widget.TextView[@bounds='[36,2915][1404,3056]']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -356,8 +401,8 @@ at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.qhl.testcases.AddContainerTest.addContainer5(AddContainerTest.java:111)
+at com.sun.proxy.$Proxy10.getText(Unknown Source)
+at com.qhl.testcases.AppLogin.login06(AppLogin.java:113)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -371,222 +416,46 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContainer5 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="1210" started-at="2021-05-10T12:43:42Z" finished-at="2021-05-10T12:43:44Z">
+        </test-method> <!-- login06 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="1362" started-at="2021-05-19T10:20:26Z" finished-at="2021-05-19T10:20:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addContainer5 status=FAILURE method=AddContainerTest.addContainer5()[pri:5, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login06 status=FAILURE method=AppLogin.login06()[pri:6, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="FAIL" signature="addContainer6()[pri:6, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer6" duration-ms="51" started-at="2021-05-10T12:43:44Z" finished-at="2021-05-10T12:43:44Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/buttonAdd}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/buttonAdd}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.isEnabled(Unknown Source)
-at com.qhl.testcases.AddContainerTest.addContainer6(AddContainerTest.java:127)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="login07()[pri:7, instance:com.qhl.testcases.AppLogin@184f6be2]" name="login07" duration-ms="14275" started-at="2021-05-19T10:20:27Z" finished-at="2021-05-19T10:20:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContainer6 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="1461" started-at="2021-05-10T12:43:44Z" finished-at="2021-05-10T12:43:45Z">
+        </test-method> <!-- login07 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@184f6be2]" name="killapk" is-config="true" duration-ms="83" started-at="2021-05-19T10:20:42Z" finished-at="2021-05-19T10:20:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addContainer6 status=FAILURE method=AddContainerTest.addContainer6()[pri:6, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login07 status=SUCCESS method=AppLogin.login07()[pri:7, instance:com.qhl.testcases.AppLogin@184f6be2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="FAIL" signature="addContainer7()[pri:7, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="addContainer7" duration-ms="69" started-at="2021-05-10T12:43:45Z" finished-at="2021-05-10T12:43:45Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/editTextScheduleNote}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-D3528CHI', ip: '192.168.43.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: e02e4be0-ae39-4e83-88a3-b70bf5b13a2b
-*** Element info: {Using=id, value=com.quickhandslogistics:id/editTextScheduleNote}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
-at com.qhl.testcases.AddContainerTest.addContainer7(AddContainerTest.java:135)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addContainer7 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AddContainerTest@26aa12dd]" name="killapk" is-config="true" duration-ms="1365" started-at="2021-05-10T12:43:45Z" finished-at="2021-05-10T12:43:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addContainer7 status=FAILURE method=AddContainerTest.addContainer7()[pri:7, instance:com.qhl.testcases.AddContainerTest@26aa12dd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killapk -->
-      </class> <!-- com.qhl.testcases.AddContainerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qhl.testcases.AppLogin -->
+    </test> <!-- All Test -->
+  </suite> <!-- QHL App Test suite -->
 </testng-results>

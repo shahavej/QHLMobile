@@ -10,13 +10,18 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
 import io.appium.java_client.MobileBy;
@@ -163,6 +168,24 @@ public class Apputil {
 			builder.append(ALPHA_NUMERIC_STRING1.charAt(character));
 		}
 		return builder.toString();
+	}
+	
+	public void bc() throws ParseException, MalformedURLException, InterruptedException
+	{
+		JSONObject jobj = Test_Data.Read_Data("config");
+		driver=launch_apk(jobj.get("apk_package").toString(), jobj.get("apk_activity").toString());
+	}
+	
+	public void am(ITestResult result) throws IOException
+	{
+		if (result.getStatus() == ITestResult.FAILURE) {
+			String temp = Webutil.getScreenshot(driver);
+			logger.fail(result.getThrowable().getMessage(),
+					MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+		}
+
+		extent.flush();
+		
 	}
 
 }
