@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [QHL App Test suite]" parallel="tests">
-  <test thread-count="1" name="All Test(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qhl.testcases.AppLogin">
-        <methods>
-          <include name="login01"/>
-          <include name="login06"/>
-          <include name="setup"/>
-          <include name="killapk"/>
-          <include name="report_setup"/>
-        </methods>
-      </class> <!-- com.qhl.testcases.AppLogin -->
       <class name="com.qhl.testcases.ForgotPasswordTest">
         <methods>
-          <include name="forgot_password02"/>
-          <include name="forgot_password03"/>
           <include name="setup"/>
           <include name="forgot_password04"/>
-          <include name="forgot_password01"/>
           <include name="killapk"/>
           <include name="report_setup"/>
         </methods>
       </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
     </classes>
-  </test> <!-- All Test(failed) -->
-</suite> <!-- Failed suite [QHL App Test suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

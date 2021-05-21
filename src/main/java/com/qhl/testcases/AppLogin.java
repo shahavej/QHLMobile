@@ -22,6 +22,7 @@ public class AppLogin extends Apputil {
 	@BeforeClass
 	public void setup() throws MalformedURLException, ParseException, InterruptedException
 	{
+		
 		bc();
 	}
 
@@ -82,20 +83,17 @@ public class AppLogin extends Apputil {
 		logger = extent.createTest("At login screen each field should have proper label and validation");
 
 		obj.get_signin_btn().click();
-		//String msg = obj.get_sneckbar().getText().toString();
-		//System.out.println(msg);
+		
 		boolean r1 = driver.findElement(By.xpath("//android.widget.TextView[@text='Please enter Employee Id']")).isDisplayed();
 		assertEquals(r1, true);
 		Thread.sleep(1000);
-		//assertEquals(msg, "Please enter Employee Id");
+		
 		obj.get_empid_fld().sendKeys("C79H27");
 		obj.get_signin_btn().click();
-		//String msg1 = obj.get_sneckbar().getText().toString();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		//System.out.println(msg1);
 		boolean r2 = driver.findElement(By.xpath("//android.widget.TextView[@text='Please enter Password']")).isDisplayed();
 		assertEquals(r2, true);
-		//assertEquals(msg1, "Please enter Password");
+		
 
 	}
 
@@ -111,7 +109,7 @@ public class AppLogin extends Apputil {
 		obj.get_signin_btn().click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		String msg = obj.get_sneckbar().getText().toString();
-		//driver.findElement(By.xpath("//android.widget.TextView[@text='Invalid employee ID or password']")).isDisplayed();
+		
 		assertEquals(msg, "Invalid employee ID or password");
 	}
 	

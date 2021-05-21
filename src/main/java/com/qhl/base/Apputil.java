@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -28,6 +29,8 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class Apputil {
 	public static AndroidDriver<WebElement> driver;
@@ -183,9 +186,7 @@ public class Apputil {
 			logger.fail(result.getThrowable().getMessage(),
 					MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
-
 		extent.flush();
-		
 	}
-
+	
 }
