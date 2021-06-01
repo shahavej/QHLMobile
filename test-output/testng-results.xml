@@ -1,81 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109904" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:51:02Z">
+  <suite name="Default suite" duration-ms="62354" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:01:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109904" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:51:02Z">
-      <class name="com.qhl.testcases.ForgotPasswordTest">
-        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="report_setup" is-config="true" duration-ms="220" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:49:12Z">
+    <test name="Default test" duration-ms="62354" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:01:45Z">
+      <class name="com.qhl.testcases.AppLogin">
+        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="report_setup" is-config="true" duration-ms="645" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report_setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="setup" is-config="true" duration-ms="17953" started-at="2021-05-04T06:49:12Z" finished-at="2021-05-04T06:49:30Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="setup" is-config="true" duration-ms="24949" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:01:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password01" duration-ms="1676" started-at="2021-05-04T06:49:30Z" finished-at="2021-05-04T06:49:32Z">
+        <test-method status="PASS" signature="login01()[pri:1, instance:com.qhl.testcases.AppLogin@48503868]" name="login01" duration-ms="283" started-at="2021-05-21T07:01:07Z" finished-at="2021-05-21T07:01:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgot_password01 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="397" started-at="2021-05-04T06:49:32Z" finished-at="2021-05-04T06:49:32Z">
+        </test-method> <!-- login01 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="592" started-at="2021-05-21T07:01:08Z" finished-at="2021-05-21T07:01:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=forgot_password01 status=SUCCESS method=ForgotPasswordTest.forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login01 status=SUCCESS method=AppLogin.login01()[pri:1, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password02" duration-ms="4501" started-at="2021-05-04T06:49:32Z" finished-at="2021-05-04T06:49:36Z">
+        <test-method status="PASS" signature="login02()[pri:2, instance:com.qhl.testcases.AppLogin@48503868]" name="login02" duration-ms="85" started-at="2021-05-21T07:01:08Z" finished-at="2021-05-21T07:01:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgot_password02 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="100" started-at="2021-05-04T06:49:36Z" finished-at="2021-05-04T06:49:37Z">
+        </test-method> <!-- login02 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="85" started-at="2021-05-21T07:01:08Z" finished-at="2021-05-21T07:01:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=forgot_password02 status=SUCCESS method=ForgotPasswordTest.forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login02 status=SUCCESS method=AppLogin.login02()[pri:2, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password03" duration-ms="57978" started-at="2021-05-04T06:49:37Z" finished-at="2021-05-04T06:50:35Z">
+        <test-method status="PASS" signature="login03()[pri:3, instance:com.qhl.testcases.AppLogin@48503868]" name="login03" duration-ms="80" started-at="2021-05-21T07:01:09Z" finished-at="2021-05-21T07:01:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgot_password03 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="47" started-at="2021-05-04T06:50:35Z" finished-at="2021-05-04T06:50:35Z">
+        </test-method> <!-- login03 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="84" started-at="2021-05-21T07:01:09Z" finished-at="2021-05-21T07:01:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=forgot_password03 status=SUCCESS method=ForgotPasswordTest.forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login03 status=SUCCESS method=AppLogin.login03()[pri:3, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="forgot_password04" duration-ms="27191" started-at="2021-05-04T06:50:35Z" finished-at="2021-05-04T06:51:02Z">
+        <test-method status="PASS" signature="login04()[pri:4, instance:com.qhl.testcases.AppLogin@48503868]" name="login04" duration-ms="4471" started-at="2021-05-21T07:01:09Z" finished-at="2021-05-21T07:01:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgot_password04 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd]" name="killapk" is-config="true" duration-ms="36" started-at="2021-05-04T06:51:02Z" finished-at="2021-05-04T06:51:02Z">
+        </test-method> <!-- login04 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="145" started-at="2021-05-21T07:01:13Z" finished-at="2021-05-21T07:01:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=forgot_password04 status=SUCCESS method=ForgotPasswordTest.forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@26aa12dd] output={null}]]]>
+                <![CDATA[[TestResult name=login04 status=SUCCESS method=AppLogin.login04()[pri:4, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killapk -->
-      </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
+        <test-method status="PASS" signature="login05()[pri:5, instance:com.qhl.testcases.AppLogin@48503868]" name="login05" duration-ms="5312" started-at="2021-05-21T07:01:13Z" finished-at="2021-05-21T07:01:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login05 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="176" started-at="2021-05-21T07:01:19Z" finished-at="2021-05-21T07:01:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login05 status=SUCCESS method=AppLogin.login05()[pri:5, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="login06()[pri:6, instance:com.qhl.testcases.AppLogin@48503868]" name="login06" duration-ms="7182" started-at="2021-05-21T07:01:19Z" finished-at="2021-05-21T07:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login06 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="95" started-at="2021-05-21T07:01:26Z" finished-at="2021-05-21T07:01:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login06 status=SUCCESS method=AppLogin.login06()[pri:6, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+        <test-method status="PASS" signature="login07()[pri:7, instance:com.qhl.testcases.AppLogin@48503868]" name="login07" duration-ms="18643" started-at="2021-05-21T07:01:26Z" finished-at="2021-05-21T07:01:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login07 -->
+        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="90" started-at="2021-05-21T07:01:45Z" finished-at="2021-05-21T07:01:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login07 status=SUCCESS method=AppLogin.login07()[pri:7, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killapk -->
+      </class> <!-- com.qhl.testcases.AppLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

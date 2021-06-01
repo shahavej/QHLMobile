@@ -12,10 +12,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.qhl.base.Apputil;
 import com.qhl.base.Test_Data;
-import com.qhl.base.Webutil;
 import com.qhl.pages.LoginScreen;
 
 public class AppLogin extends Apputil {
@@ -24,30 +22,22 @@ public class AppLogin extends Apputil {
 	@BeforeClass
 	public void setup() throws MalformedURLException, ParseException, InterruptedException
 	{
-		JSONObject jobj = Test_Data.Read_Data("config");
-		driver=launch_apk(jobj.get("apk_package").toString(), jobj.get("apk_activity").toString());
-		obj=new LoginScreen(driver);
-
+		
+		bc();
 	}
 
 	@AfterMethod
 	public void killapk(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			String temp = Webutil.getScreenshot(driver);
-			logger.fail(result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
-		}
-
-		extent.flush();
-		//driver.close();
+		am(result);
 	}
 
 	@Test(priority=1)
 	public void login01()
 	{
 		logger = extent.createTest("After launch the apk Flash screen should appear");
-
+		
+		obj=new LoginScreen(driver);
 		assertEquals(obj.get_splash_screen().isDisplayed(), true);
 	}
 	
@@ -93,20 +83,17 @@ public class AppLogin extends Apputil {
 		logger = extent.createTest("At login screen each field should have proper label and validation");
 
 		obj.get_signin_btn().click();
-		//String msg = obj.get_sneckbar().getText().toString();
-		//System.out.println(msg);
+		
 		boolean r1 = driver.findElement(By.xpath("//android.widget.TextView[@text='Please enter Employee Id']")).isDisplayed();
 		assertEquals(r1, true);
 		Thread.sleep(1000);
-		//assertEquals(msg, "Please enter Employee Id");
+		
 		obj.get_empid_fld().sendKeys("C79H27");
 		obj.get_signin_btn().click();
-		//String msg1 = obj.get_sneckbar().getText().toString();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		//System.out.println(msg1);
 		boolean r2 = driver.findElement(By.xpath("//android.widget.TextView[@text='Please enter Password']")).isDisplayed();
 		assertEquals(r2, true);
-		//assertEquals(msg1, "Please enter Password");
+		
 
 	}
 
@@ -122,7 +109,7 @@ public class AppLogin extends Apputil {
 		obj.get_signin_btn().click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		String msg = obj.get_sneckbar().getText().toString();
-		//driver.findElement(By.xpath("//android.widget.TextView[@text='Invalid employee ID or password']")).isDisplayed();
+		
 		assertEquals(msg, "Invalid employee ID or password");
 	}
 	

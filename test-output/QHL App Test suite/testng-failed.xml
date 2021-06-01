@@ -3,6 +3,15 @@
 <suite thread-count="1" name="Failed suite [QHL App Test suite]" parallel="tests">
   <test thread-count="1" name="All Test(failed)" parallel="tests">
     <classes>
+      <class name="com.qhl.testcases.AppLogin">
+        <methods>
+          <include name="login01"/>
+          <include name="login06"/>
+          <include name="setup"/>
+          <include name="killapk"/>
+          <include name="report_setup"/>
+        </methods>
+      </class> <!-- com.qhl.testcases.AppLogin -->
       <class name="com.qhl.testcases.ForgotPasswordTest">
         <methods>
           <include name="forgot_password02"/>
@@ -14,15 +23,6 @@
           <include name="report_setup"/>
         </methods>
       </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
-      <class name="com.qhl.testcases.AppLogin">
-        <methods>
-          <include name="login06"/>
-          <include name="setup"/>
-          <include name="killapk"/>
-          <include name="login07"/>
-          <include name="report_setup"/>
-        </methods>
-      </class> <!-- com.qhl.testcases.AppLogin -->
     </classes>
   </test> <!-- All Test(failed) -->
 </suite> <!-- Failed suite [QHL App Test suite] -->

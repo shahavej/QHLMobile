@@ -27,31 +27,23 @@ public class ForgotPasswordTest extends Apputil {
 	@BeforeClass
 	public void setup() throws MalformedURLException, ParseException, InterruptedException
 	{
-		JSONObject jobj = Test_Data.Read_Data("config");
-		driver=launch_apk(jobj.get("apk_package").toString(), jobj.get("apk_activity").toString());
-		fps = new ForgotPasswordScreen(driver);
-		ls = new LoginScreen(driver);
+		bc();
+		
 
 	}
 
 	@AfterMethod
 	public void killapk(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			String temp = Webutil.getScreenshot(driver);
-			logger.fail(result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
-		}
-
-		extent.flush();
-		//driver.close();
+		am(result);
 	}
-
+	
 	@Test(priority=1)
 	public void forgot_password01()
 	{
 		logger = extent.createTest("At Forgot password screen should have proper title");
-		
+		fps = new ForgotPasswordScreen(driver);
+		ls = new LoginScreen(driver);
 		ls.get_forgotpwd_ltxt().click();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		boolean r1 = driver.findElement(By.xpath("//android.widget.TextView[@text='Forgot Password']")).isDisplayed();
