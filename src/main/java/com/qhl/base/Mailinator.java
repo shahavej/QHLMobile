@@ -66,7 +66,7 @@ public class Mailinator {
 		}
 
 		Faker fake = new Faker();
-		String password = fake.name().firstName()+"@321";
+		String password = fake.name().firstName()+"@004321";
 		System.out.println("in mailinator :"+password);
 		w_driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys(password);
 		w_driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys(password);

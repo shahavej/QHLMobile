@@ -5,13 +5,11 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.OutputType;
@@ -19,6 +17,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -29,8 +30,6 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class Apputil {
 	public static AndroidDriver<WebElement> driver;
@@ -173,13 +172,15 @@ public class Apputil {
 		return builder.toString();
 	}
 	
-	public void bc() throws ParseException, MalformedURLException, InterruptedException
+	@BeforeClass
+	public void setup() throws ParseException, MalformedURLException, InterruptedException
 	{
 		JSONObject jobj = Test_Data.Read_Data("config");
 		driver=launch_apk(jobj.get("apk_package").toString(), jobj.get("apk_activity").toString());
 	}
 	
-	public void am(ITestResult result) throws IOException
+	@AfterMethod
+	public void flush(ITestResult result) throws IOException
 	{
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String temp = Webutil.getScreenshot(driver);
@@ -187,6 +188,11 @@ public class Apputil {
 					MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
 		extent.flush();
+	}
+	@AfterClass
+	public void teardown()
+	{
+		driver.quit();
 	}
 	
 }

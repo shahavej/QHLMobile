@@ -1,16 +1,10 @@
 package com.qhl.testcases;
 
 import static org.testng.Assert.assertEquals;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.qhl.base.Apputil;
 import com.qhl.base.Test_Data;
@@ -18,19 +12,6 @@ import com.qhl.pages.LoginScreen;
 
 public class AppLogin extends Apputil {
 	LoginScreen obj;
-
-	@BeforeClass
-	public void setup() throws MalformedURLException, ParseException, InterruptedException
-	{
-		
-		bc();
-	}
-
-	@AfterMethod
-	public void killapk(ITestResult result) throws IOException {
-
-		am(result);
-	}
 
 	@Test(priority=1)
 	public void login01()

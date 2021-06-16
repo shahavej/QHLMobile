@@ -1,126 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62354" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:01:45Z">
+  <suite name="Default suite" duration-ms="90014" started-at="2021-06-16T12:12:26Z" finished-at="2021-06-16T12:13:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62354" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:01:45Z">
-      <class name="com.qhl.testcases.AppLogin">
-        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="report_setup" is-config="true" duration-ms="645" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:00:42Z">
+    <test name="Default test" duration-ms="90014" started-at="2021-06-16T12:12:26Z" finished-at="2021-06-16T12:13:56Z">
+      <class name="com.qhl.testcases.ForgotPasswordTest">
+        <test-method status="PASS" signature="report_setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="report_setup" is-config="true" duration-ms="211" started-at="2021-06-16T12:12:26Z" finished-at="2021-06-16T12:12:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report_setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="setup" is-config="true" duration-ms="24949" started-at="2021-05-21T07:00:42Z" finished-at="2021-05-21T07:01:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="setup" is-config="true" duration-ms="21723" started-at="2021-06-16T12:12:26Z" finished-at="2021-06-16T12:12:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login01()[pri:1, instance:com.qhl.testcases.AppLogin@48503868]" name="login01" duration-ms="283" started-at="2021-05-21T07:01:07Z" finished-at="2021-05-21T07:01:08Z">
+        <test-method status="PASS" signature="forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="forgot_password01" duration-ms="1529" started-at="2021-06-16T12:12:48Z" finished-at="2021-06-16T12:12:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login01 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="592" started-at="2021-05-21T07:01:08Z" finished-at="2021-05-21T07:01:08Z">
+        </test-method> <!-- forgot_password01 -->
+        <test-method status="PASS" signature="flush(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="flush" is-config="true" duration-ms="334" started-at="2021-06-16T12:12:50Z" finished-at="2021-06-16T12:12:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login01 status=SUCCESS method=AppLogin.login01()[pri:1, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+                <![CDATA[[TestResult name=forgot_password01 status=SUCCESS method=ForgotPasswordTest.forgot_password01()[pri:1, instance:com.qhl.testcases.ForgotPasswordTest@6895a785] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="login02()[pri:2, instance:com.qhl.testcases.AppLogin@48503868]" name="login02" duration-ms="85" started-at="2021-05-21T07:01:08Z" finished-at="2021-05-21T07:01:08Z">
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="forgot_password02" duration-ms="4000" started-at="2021-06-16T12:12:50Z" finished-at="2021-06-16T12:12:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login02 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="85" started-at="2021-05-21T07:01:08Z" finished-at="2021-05-21T07:01:09Z">
+        </test-method> <!-- forgot_password02 -->
+        <test-method status="PASS" signature="flush(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="flush" is-config="true" duration-ms="73" started-at="2021-06-16T12:12:54Z" finished-at="2021-06-16T12:12:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login02 status=SUCCESS method=AppLogin.login02()[pri:2, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+                <![CDATA[[TestResult name=forgot_password02 status=SUCCESS method=ForgotPasswordTest.forgot_password02()[pri:2, instance:com.qhl.testcases.ForgotPasswordTest@6895a785] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="login03()[pri:3, instance:com.qhl.testcases.AppLogin@48503868]" name="login03" duration-ms="80" started-at="2021-05-21T07:01:09Z" finished-at="2021-05-21T07:01:09Z">
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="forgot_password03" duration-ms="30318" started-at="2021-06-16T12:12:54Z" finished-at="2021-06-16T12:13:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login03 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="84" started-at="2021-05-21T07:01:09Z" finished-at="2021-05-21T07:01:09Z">
+        </test-method> <!-- forgot_password03 -->
+        <test-method status="PASS" signature="flush(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="flush" is-config="true" duration-ms="52" started-at="2021-06-16T12:13:24Z" finished-at="2021-06-16T12:13:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login03 status=SUCCESS method=AppLogin.login03()[pri:3, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+                <![CDATA[[TestResult name=forgot_password03 status=SUCCESS method=ForgotPasswordTest.forgot_password03()[pri:3, instance:com.qhl.testcases.ForgotPasswordTest@6895a785] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="login04()[pri:4, instance:com.qhl.testcases.AppLogin@48503868]" name="login04" duration-ms="4471" started-at="2021-05-21T07:01:09Z" finished-at="2021-05-21T07:01:13Z">
+        </test-method> <!-- flush -->
+        <test-method status="FAIL" signature="forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="forgot_password04" duration-ms="31939" started-at="2021-06-16T12:13:24Z" finished-at="2021-06-16T12:13:56Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-D3528CHI', ip: '192.168.244.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 403fe07a-5d5e-48f6-a727-cff66374a29a
+*** Element info: {Using=id, value=com.quickhandslogistics:id/textViewToolbar}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-D3528CHI', ip: '192.168.244.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 403fe07a-5d5e-48f6-a727-cff66374a29a
+*** Element info: {Using=id, value=com.quickhandslogistics:id/textViewToolbar}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at com.qhl.testcases.ForgotPasswordTest.forgot_password04(ForgotPasswordTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login04 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="145" started-at="2021-05-21T07:01:13Z" finished-at="2021-05-21T07:01:13Z">
+        </test-method> <!-- forgot_password04 -->
+        <test-method status="FAIL" signature="flush(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="flush" is-config="true" duration-ms="15" started-at="2021-06-16T12:13:56Z" finished-at="2021-06-16T12:13:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login04 status=SUCCESS method=AppLogin.login04()[pri:4, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
+                <![CDATA[[TestResult name=forgot_password04 status=FAILURE method=ForgotPasswordTest.forgot_password04()[pri:4, instance:com.qhl.testcases.ForgotPasswordTest@6895a785] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-D3528CHI', ip: '192.168.244.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 403fe07a-5d5e-48f6-a727-cff66374a29a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-D3528CHI', ip: '192.168.244.96', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, databaseEnabled: false, desired: {appActivity: com.quickhandslogistics.vie..., appPackage: com.quickhandslogistics, automationName: Appium, deviceName: Android Emulator, newCommandTimeout: 60, platformName: android, platformVersion: 10.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 480, deviceScreenSize: 1440x3200, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 72, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 403fe07a-5d5e-48f6-a727-cff66374a29a
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.qhl.base.Webutil.getScreenshot(Webutil.java:43)
+at com.qhl.base.Apputil.flush(Apputil.java:186)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="login05()[pri:5, instance:com.qhl.testcases.AppLogin@48503868]" name="login05" duration-ms="5312" started-at="2021-05-21T07:01:13Z" finished-at="2021-05-21T07:01:19Z">
+        </test-method> <!-- flush -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.qhl.testcases.ForgotPasswordTest@6895a785]" name="teardown" is-config="true" duration-ms="0" started-at="2021-06-16T12:13:56Z" finished-at="2021-06-16T12:13:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login05 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="176" started-at="2021-05-21T07:01:19Z" finished-at="2021-05-21T07:01:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login05 status=SUCCESS method=AppLogin.login05()[pri:5, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="login06()[pri:6, instance:com.qhl.testcases.AppLogin@48503868]" name="login06" duration-ms="7182" started-at="2021-05-21T07:01:19Z" finished-at="2021-05-21T07:01:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login06 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="95" started-at="2021-05-21T07:01:26Z" finished-at="2021-05-21T07:01:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login06 status=SUCCESS method=AppLogin.login06()[pri:6, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killapk -->
-        <test-method status="PASS" signature="login07()[pri:7, instance:com.qhl.testcases.AppLogin@48503868]" name="login07" duration-ms="18643" started-at="2021-05-21T07:01:26Z" finished-at="2021-05-21T07:01:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login07 -->
-        <test-method status="PASS" signature="killapk(org.testng.ITestResult)[pri:0, instance:com.qhl.testcases.AppLogin@48503868]" name="killapk" is-config="true" duration-ms="90" started-at="2021-05-21T07:01:45Z" finished-at="2021-05-21T07:01:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login07 status=SUCCESS method=AppLogin.login07()[pri:7, instance:com.qhl.testcases.AppLogin@48503868] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killapk -->
-      </class> <!-- com.qhl.testcases.AppLogin -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

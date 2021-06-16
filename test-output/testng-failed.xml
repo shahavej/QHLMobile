@@ -5,9 +5,10 @@
     <classes>
       <class name="com.qhl.testcases.ForgotPasswordTest">
         <methods>
-          <include name="setup"/>
           <include name="forgot_password04"/>
-          <include name="killapk"/>
+          <include name="flush"/>
+          <include name="setup"/>
+          <include name="teardown"/>
           <include name="report_setup"/>
         </methods>
       </class> <!-- com.qhl.testcases.ForgotPasswordTest -->
