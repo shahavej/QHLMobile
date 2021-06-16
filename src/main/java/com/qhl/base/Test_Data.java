@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
@@ -24,7 +23,7 @@ public class Test_Data {
 		JSONParser parser = new JSONParser();
 		try {
 			//Object obj = parser.parse(new FileReader("./TestData/"+filename+".json"));
-			Object obj = parser.parse(new FileReader("D:\\AppiumProject\\QHL\\WebAndApp\\TestData\\"+filename+".json"));
+			Object obj = parser.parse(new FileReader(".\\TestData\\"+filename+".json"));
 			
 			
 			JSONObject jsonObject = (JSONObject) obj;

@@ -2,9 +2,8 @@
 	annotations="JDK" parallel="tests">
 	<test name="All Test">
 		<classes>
-			<class name="com.qhl.testcases.AppLogin" />
-			<class name="com.qhl.testcases.ForgotPasswordTest" />
+			<class name="com.qhl.testcases.AppLogin" > </class>
+			<class name="com.qhl.testcases.ForgotPasswordTest" > </class>
 		</classes>
 	</test>
-
 </suite>
